@@ -18,7 +18,7 @@ Simple Symfony Gallery
 - Copy your images into `/public/images/gallery` folder.
 - Configure your webserver to serve this site from its /public document root
 
-## See it at work on an AWS Amazon Beanstalk instance!
+## See it at work on an AWS Amazon Elastic Beanstalk instance!
 http://sample-gallery.eu-central-1.elasticbeanstalk.com/
 
 That's all, folks! ;)
