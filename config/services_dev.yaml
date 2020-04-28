@@ -1,4 +1,4 @@
 parameters:
-  basepath: '/home/tanacsk/www/gallery/public'
+  gallery_path: '/../../public/images/gallery'
   limit: 25
   rows_per_page: 5

@@ -15,11 +15,10 @@ class GalleryController extends AbstractController
      */
     public function listAction(Request $request)
     {
-        $path = $this->getParameter('basepath') . '/images/gallery';
 
         // Képfájlok listája
         $images = [];
-        foreach($this->getSortedFileList($path) as $file) {
+        foreach($this->getSortedFileList($this->getPath()) as $file) {
             $images[] = $file->getRelativePathname();
         }
 
@@ -51,4 +50,10 @@ class GalleryController extends AbstractController
 
         return $finder;
     }
+
+    protected function getPath(): string
+    {
+        return realpath(__DIR__ . $this->getParameter('gallery_path'));
+    }
+
 }
